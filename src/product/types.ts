@@ -11,7 +11,8 @@ interface ProductAttributes extends Record<string, any> {
 }
 
 export interface Question extends Record<string, any> {
-  content: string;
+  question: string;
+  created_at: string;
 }
 export interface ProductHome extends Record<string, any> {
   category: string;
@@ -38,5 +39,4 @@ export interface Product extends Record<string, any> {
   condition: string;
   pictures: ProductPicture[];
   attributes: ProductAttributes[];
-  questions: Question[];
 }
