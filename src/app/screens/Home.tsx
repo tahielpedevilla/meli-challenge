@@ -4,6 +4,7 @@ import {Container, Grid, Image, Link, Stack, Text} from "@chakra-ui/react";
 import {ProductCardSmall, ProductCardLarge} from "../components/ProductCard";
 import LastOffers from "../components/LastOffers";
 import DiscountCard from "../components/DiscountCard";
+import banner1 from "../../assets/images/banner/home-sliderdesktop-1.webp";
 
 const HomeScreen: React.FC = () => {
   return (
@@ -12,7 +13,7 @@ const HomeScreen: React.FC = () => {
         alt="Banner Image"
         h="340px"
         objectFit="cover"
-        src="../../assets/images/banner/home-sliderdesktop-1.webp"
+        src={banner1}
       />
       <Container alignSelf="center" maxW="container.xl">
         <Stack direction="row" justify="space-between" mb={12} spacing={0}>
