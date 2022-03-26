@@ -12,7 +12,7 @@ const HomeScreen: React.FC = () => {
         alt="Banner Image"
         h="340px"
         objectFit="cover"
-        src="src/assets/images/banner/home-sliderdesktop-1.webp"
+        src="../../assets/images/banner/home-sliderdesktop-1.webp"
       />
       <Container alignSelf="center" maxW="container.xl">
         <Stack direction="row" justify="space-between" mb={12} spacing={0}>
