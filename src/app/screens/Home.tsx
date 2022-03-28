@@ -12,7 +12,7 @@ const HomeScreen: React.FC = () => {
         alt="Banner Image"
         h="340px"
         objectFit="cover"
-        src="src/public/assets/images/banner/home-sliderdesktop-1.webp"
+        src="assets/images/banner/home-sliderdesktop-1.webp"
       />
       <Container alignSelf="center" maxW="container.xl">
         <Stack direction="row" justify="space-between" mb={12} spacing={0}>
@@ -23,7 +23,7 @@ const HomeScreen: React.FC = () => {
             cursor="pointer"
             h="100%"
             objectFit="cover"
-            src="src/public/assets/images/D_NQ_NP772680-MLA47918261265_102021-B.webp"
+            src="assets/images/D_NQ_NP772680-MLA47918261265_102021-B.webp"
             transition="box-shadow .2s ease-in-out"
             w={"calc(50% - .5rem)"}
           />
@@ -34,7 +34,7 @@ const HomeScreen: React.FC = () => {
             cursor="pointer"
             h="100%"
             objectFit="cover"
-            src="src/public/assets/images/D_NQ_NP818885-MLA47918261210_102021-B.webp"
+            src="assets/images/D_NQ_NP818885-MLA47918261210_102021-B.webp"
             transition="box-shadow .2s ease-in-out"
             w={"calc(50% - .5rem)"}
           />
@@ -48,7 +48,7 @@ const HomeScreen: React.FC = () => {
               <ProductCardSmall
                 category="Informática"
                 discount="30"
-                image="src/public/assets/images/products/D_Q_NP_649806-MLA47931899819_102021-G.webp"
+                image="/assets/images/products/D_Q_NP_649806-MLA47931899819_102021-G.webp"
               />
               <ProductCardSmall
                 category="Celulares"
