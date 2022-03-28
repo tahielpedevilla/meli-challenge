@@ -23,7 +23,7 @@ const HomeScreen: React.FC = () => {
             cursor="pointer"
             h="100%"
             objectFit="cover"
-            src="assets/images/D_NQ_NP772680-MLA47918261265_102021-B.webp"
+            src="src/public/assets/images/D_NQ_NP772680-MLA47918261265_102021-B.webp"
             transition="box-shadow .2s ease-in-out"
             w={"calc(50% - .5rem)"}
           />
@@ -34,7 +34,7 @@ const HomeScreen: React.FC = () => {
             cursor="pointer"
             h="100%"
             objectFit="cover"
-            src="assets/images/D_NQ_NP818885-MLA47918261210_102021-B.webp"
+            src="src/public/assets/images/D_NQ_NP818885-MLA47918261210_102021-B.webp"
             transition="box-shadow .2s ease-in-out"
             w={"calc(50% - .5rem)"}
           />
@@ -48,7 +48,7 @@ const HomeScreen: React.FC = () => {
               <ProductCardSmall
                 category="Informática"
                 discount="30"
-                image="/assets/images/products/D_Q_NP_649806-MLA47931899819_102021-G.webp"
+                image="src/public/assets/images/products/D_Q_NP_649806-MLA47931899819_102021-G.webp"
               />
               <ProductCardSmall
                 category="Celulares"
@@ -239,7 +239,7 @@ const HomeScreen: React.FC = () => {
           />
         </Stack>
         <Text color="blackAlpha.800" fontSize="xs" mt={4}>
-          Imágenes de referencia. Válido en Argentina del 01/11 al 08/11/2021 para compras de
+          Imágenes de referencia.Válido en Argentina del 01/11 al 08/11/2021 para compras de
           productos seleccionados publicados en http://www.mercadolibre.com.ar/ofertas/cyber-monday.
           Ofertas a cargo de cada usuario vendedor, sujetas a disponibilidad de los productos
           ofertados y a las condiciones establecidas por el vendedor en el anuncio publicado en el
