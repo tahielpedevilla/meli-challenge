@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import {BrowserRouter} from "react-router-dom";
 import {ChakraProvider, ColorModeScript} from "@chakra-ui/react";
 
+import Fonts from "./fonts";
 import App from "./app";
 import theme from "./theme";
 
@@ -11,6 +12,7 @@ ReactDOM.render(
     <BrowserRouter>
       <ChakraProvider theme={theme}>
         <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+        <Fonts />
         <App />
       </ChakraProvider>
     </BrowserRouter>

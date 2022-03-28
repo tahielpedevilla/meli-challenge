@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
               <Text>Defensa del Consumidor</Text>
             </Stack>
             <Stack color="blackAlpha.500" direction="column" fontSize="xs" spacing={0}>
-              <Text>Copyright © 1999-2021 MercadoLibre S.R.L.</Text>
+              <Text>Copyright © 1999-2022 MercadoLibre S.R.L.</Text>
               <Text>Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</Text>
             </Stack>
           </Stack>

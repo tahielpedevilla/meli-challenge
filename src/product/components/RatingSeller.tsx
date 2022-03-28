@@ -1,8 +1,8 @@
 import React from "react";
 import {Box, Grid, Image, Stack, StackDivider, Text} from "@chakra-ui/react";
 
-import IconMessagePositive from "../../assets/icons/icon-message-positive.svg";
-import IconTimePositive from "../../assets/icons/icon-time-positive.svg";
+import IconMessagePositive from "../../public/assets/icons/icon-message-positive.svg";
+import IconTimePositive from "../../public/assets/icons/icon-time-positive.svg";
 
 const RatingSeller: React.FC = () => {
   return (

@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {Text, Stack, Heading, Image, Input, Button, Box} from "@chakra-ui/react";
 
 import firebase from "../../firebase";
-import iconList from "../../assets/icons/question-list-icon.svg";
+import iconList from "../../public/assets/icons/question-list-icon.svg";
 
 const useQuestions = () => {
   const [questions, setQuestions] = React.useState<any>([]);

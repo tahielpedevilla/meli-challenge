@@ -13,10 +13,10 @@ import {
 } from "@chakra-ui/react";
 import {FiHeart} from "react-icons/fi";
 
-import IconTruck from "../../assets/icons/icon-truck.svg";
-import IconReturn from "../../assets/icons/icon-return.svg";
-import IconProtected from "../../assets/icons/icon-protected.svg";
-import IconLoyalty from "../../assets/icons/icon-loyalty.svg";
+import IconTruck from "../../public/assets/icons/icon-truck.svg";
+import IconReturn from "../../public/assets/icons/icon-return.svg";
+import IconProtected from "../../public/assets/icons/icon-protected.svg";
+import IconLoyalty from "../../public/assets/icons/icon-loyalty.svg";
 import {Product} from "../types";
 import mock from "../mock";
 

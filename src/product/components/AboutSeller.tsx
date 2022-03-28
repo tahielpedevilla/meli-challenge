@@ -1,8 +1,8 @@
 import React from "react";
 import {Image, Link, Stack, Text} from "@chakra-ui/react";
 
-import IconMedal from "../../assets/icons/icon-medal.svg";
-import IconPin from "../../assets/icons/icon-pin.svg";
+import IconMedal from "../../public/assets/icons/icon-medal.svg";
+import IconPin from "../../public/assets/icons/icon-pin.svg";
 import {Product} from "../types";
 import mock from "../mock";
 
