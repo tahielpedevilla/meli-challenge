@@ -44,7 +44,7 @@ const ConsumerQuestions = () => {
         status: "warning",
         variant: "subtle",
         isClosable: true,
-        duration: 2000,
+        duration: 5000,
         position: "top-right",
       });
 
@@ -88,11 +88,11 @@ const ConsumerQuestions = () => {
               type="submit"
               onClick={() =>
                 toast({
-                  title: "Recuerda hacer click sobre la pregunta para eliminarla 😉",
+                  title: "Haz click sobre una pregunta para eliminarla 😉",
                   status: "info",
                   variant: "subtle",
                   isClosable: true,
-                  duration: 2000,
+                  duration: 5000,
                   position: "top-right",
                 })
               }
