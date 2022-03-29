@@ -1,5 +1,6 @@
 import React from "react";
 import {Image, Link, Stack, Text} from "@chakra-ui/react";
+import {Link as ReactLink} from "react-router-dom";
 
 import IconMedal from "../../public/assets/icons/icon-medal.svg";
 import IconPin from "../../public/assets/icons/icon-pin.svg";
@@ -46,7 +47,7 @@ const AboutSeller: React.FC<Props> = ({product = mock.product}) => {
           </Stack>
         </Stack>
         <RatingSeller />
-        <Link fontSize="sm" fontWeight="400" href="#">
+        <Link as={ReactLink} fontSize="sm" fontWeight="400" to="#">
           Ver más datos de este vendedor
         </Link>
       </Stack>

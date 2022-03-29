@@ -11,6 +11,7 @@ import {
   Text,
   useToast,
 } from "@chakra-ui/react";
+import {Link as ReactLink} from "react-router-dom";
 import {FiHeart} from "react-icons/fi";
 
 import IconTruck from "../../public/assets/icons/icon-truck.svg";
@@ -68,7 +69,7 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
           <Text fontSize="lg" fontWeight="400" pb={2}>
             en 12x {formatter.format(product.price / 12)}
           </Text>
-          <Link fontSize="sm" fontWeight="400" href="#">
+          <Link as={ReactLink} fontSize="sm" fontWeight="400" to="#">
             Ver los medios de pago
           </Link>
         </Stack>
@@ -83,7 +84,7 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
             <Text color="blackAlpha.500" fontSize="sm">
               Beneficio Mercado Puntos
             </Text>
-            <Link fontSize="sm" fontWeight="400" href="#">
+            <Link as={ReactLink} fontSize="sm" fontWeight="400" to="#">
               Ver más formas de entrega
             </Link>
           </Stack>
@@ -95,7 +96,7 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
             <Text color="blackAlpha.600" fontSize="sm">
               Tenés 30 días desde que lo recibís.
             </Text>
-            <Link fontSize="sm" fontWeight="400" href="#">
+            <Link as={ReactLink} fontSize="sm" fontWeight="400" to="#">
               Conocer más
             </Link>
           </Stack>
@@ -147,11 +148,16 @@ const ProductDetail: React.FC<Props> = ({product = mock.product}) => {
             </Stack>
             <Stack direction="column" spacing={4}>
               <Text color="blackAlpha.500" fontSize="sm">
-                <Link href="#">Compra Protegida</Link>, recibí el producto que esperabas o te
-                devolvemos tu dinero.
+                <Link as={ReactLink} to="#">
+                  Compra Protegida
+                </Link>
+                , recibí el producto que esperabas o te devolvemos tu dinero.
               </Text>
               <Text color="blackAlpha.500" fontSize="sm">
-                <Link href="#">Mercado Puntos</Link>. Sumás 119 puntos.
+                <Link as={ReactLink} to="#">
+                  Mercado Puntos
+                </Link>
+                . Sumás 119 puntos.
               </Text>
             </Stack>
           </Stack>

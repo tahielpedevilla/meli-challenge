@@ -11,6 +11,7 @@ import {
   Image,
   Link,
 } from "@chakra-ui/react";
+import {Link as ReactLink} from "react-router-dom";
 import {IoIosSearch} from "react-icons/io";
 import {IoLocationOutline} from "react-icons/io5";
 import {BsCart2} from "react-icons/bs";
@@ -25,7 +26,7 @@ const Navbar: React.FC = () => {
         <Container alignSelf="center" maxWidth="container.xl">
           <Stack spacing={2}>
             <Stack direction="row" spacing={12}>
-              <Link href="/">
+              <Link as={ReactLink} to="/">
                 <Image alt="Logo Mercado Libre" mt={1} objectFit="contain" src={logo} />
               </Link>
               <Stack

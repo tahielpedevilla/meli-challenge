@@ -1,5 +1,6 @@
 import React from "react";
 import {Stack, Text, Link} from "@chakra-ui/react";
+import {Link as ReactLink} from "react-router-dom";
 
 interface Props {
   preTitle: string;
@@ -31,7 +32,7 @@ const DiscountCard: React.FC<Props> = ({preTitle, title}) => (
     <Text color="#4a4a4a" fontSize="4xl" lineHeight=".88" textTransform="uppercase">
       {title}
     </Text>
-    <Link fontSize="sm" href="#">
+    <Link as={ReactLink} fontSize="sm" to="#">
       Ver productos
     </Link>
   </Stack>

@@ -1,5 +1,6 @@
 import React from "react";
 import {Text, Link, Stack, Image} from "@chakra-ui/react";
+import {Link as ReactLink} from "react-router-dom";
 
 import {ProductHome} from "../../product/types";
 
@@ -36,7 +37,7 @@ export const ProductCardSmall: React.FC<Props> = ({discount, category, image}) =
       <Text fontSize="14px" fontWeight="400" pb={2} textTransform="uppercase">
         {category}
       </Text>
-      <Link fontSize={14} href="/productId">
+      <Link as={ReactLink} fontSize={14} to="/productId">
         Ver ofertas
       </Link>
     </Stack>
@@ -75,7 +76,7 @@ export const ProductCardLarge: React.FC<Props> = ({discount, category, image}) =
       <Text fontSize="14px" fontWeight="400" pb={2} textTransform="uppercase">
         {category}
       </Text>
-      <Link fontSize={14} href="/productId">
+      <Link as={ReactLink} fontSize={14} to="/productId">
         Ver ofertas
       </Link>
     </Stack>
