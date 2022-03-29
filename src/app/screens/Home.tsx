@@ -240,7 +240,7 @@ const HomeScreen: React.FC = () => {
           />
         </Stack>
         <Text color="blackAlpha.800" fontSize="xs" mt={4}>
-          Imágenes de referencia.Válido en Argentina del 01/11 al 08/11/2021 para compras de
+          Imágenes de referencia. Válido en Argentina del 01/11 al 08/11/2021 para compras de
           productos seleccionados publicados en http://www.mercadolibre.com.ar/ofertas/cyber-monday.
           Ofertas a cargo de cada usuario vendedor, sujetas a disponibilidad de los productos
           ofertados y a las condiciones establecidas por el vendedor en el anuncio publicado en el
