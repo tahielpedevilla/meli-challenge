@@ -1,7 +1,18 @@
 import React from "react";
-import {Box, Container, Stack, Text} from "@chakra-ui/react";
+import {Box, Container, IconButton, Stack, Text} from "@chakra-ui/react";
+import {IoClose} from "react-icons/io5";
 
 const Footer: React.FC = () => {
+  const [display, setDisplay] = React.useState("flex");
+
+  React.useEffect(() => {
+    const timeout = setTimeout(() => {
+      setDisplay("none");
+    }, 10000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <>
       <Box bg="gray.50" pt={2}>
@@ -21,6 +32,32 @@ const Footer: React.FC = () => {
             </Stack>
           </Stack>
         </Container>
+        <Stack
+          alignItems="center"
+          bg="gray.600"
+          bottom="0"
+          color="#fff"
+          direction="row"
+          display={display}
+          justify="space-between"
+          opacity="90%"
+          p="10px"
+          position="fixed"
+          w="100%"
+          zIndex="9999"
+        >
+          <Text fontSize="sm">
+            ESTE SITIO FUE DESARROLLADO A MODO DE PRACTICA Y COMO DESAFÍO TÉCNICO. NO TIENE NINGUNA
+            RELACIÓN CON LA EMPRESA DE MERCADO LIBRE, NI ES UN INTENTO DE PHISHING.
+          </Text>
+          <IconButton
+            aria-label="Close"
+            colorScheme="blackAlpha"
+            icon={<IoClose />}
+            size="xs"
+            onClick={() => setDisplay("none")}
+          />
+        </Stack>
       </Box>
     </>
   );
