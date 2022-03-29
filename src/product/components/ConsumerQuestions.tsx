@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {Text, Stack, Heading, Image, Input, Button, Box} from "@chakra-ui/react";
+import {Text, Stack, Heading, Image, Input, Button, Box, useToast} from "@chakra-ui/react";
 
 import firebase from "../../firebase";
 import iconList from "../../public/assets/icons/question-list-icon.svg";
@@ -32,14 +32,31 @@ const ConsumerQuestions = () => {
   const [question, setQuestion] = React.useState("");
   const questions = useQuestions();
 
+  const toast = useToast();
+
   const handleAdd = (e: any) => {
     e.preventDefault();
     e.target.text.value = "";
+
+    if (question.trim() === "" || !question || question.length < 5) {
+      toast({
+        title: "La pregunta debe tener al menos 5 caracteres",
+        status: "warning",
+        variant: "subtle",
+        isClosable: true,
+        duration: 2000,
+        position: "top-right",
+      });
+
+      return;
+    }
 
     firebase.firestore().collection("questions").add({
       question: question,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
     });
+
+    setQuestion("");
   };
 
   const handleRemove = (id: string) => {
@@ -64,7 +81,22 @@ const ConsumerQuestions = () => {
               type="text"
               onChange={(e) => setQuestion(e.target.value)}
             />
-            <Button colorScheme="twitter" px={8} size="lg" type="submit">
+            <Button
+              colorScheme="twitter"
+              px={8}
+              size="lg"
+              type="submit"
+              onClick={() =>
+                toast({
+                  title: "Recuerda hacer click sobre la pregunta para eliminarla 😉",
+                  status: "info",
+                  variant: "subtle",
+                  isClosable: true,
+                  duration: 2000,
+                  position: "top-right",
+                })
+              }
+            >
               Preguntar
             </Button>
           </Stack>
